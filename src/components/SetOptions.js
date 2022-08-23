@@ -32,7 +32,6 @@ function SetOptions() {
 
     })
     const questionSet = shuffle(shuffle(countries.concat(flags)));
-    console.log(questionSet);
     
     useEffect(() => {
         dispatch(setQuestions(questionSet));
