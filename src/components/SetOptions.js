@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { appSelector, setQuestion, setQuestions } from '../features/appSlice';
 import { useSelector, useDispatch } from 'react-redux'
 import { shuffle} from "lodash"
@@ -36,6 +36,7 @@ function SetOptions() {
     
     useEffect(() => {
         dispatch(setQuestions(questionSet));
+        dispatch(setQuestion(questionSet[questionNo]));
     }, [dispatch, restart]);
 
     

@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Display from './components/Display';
-import { setCapital, setCountryOption, setFlag } from './features/appSlice';
-import { useDispatch} from 'react-redux'
+import {  appSelector, setCapital, setCountryOption, setFlag, setQuestion } from './features/appSlice';
+import { useDispatch, useSelector} from 'react-redux'
 import SetOptions from './components/SetOptions';
 
 function App() {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState();
-
+  const {questionNo, questionSet, question} = useSelector(appSelector);
 
   useEffect(() => {
     const fetchCountries = async() => {

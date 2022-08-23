@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/outline"
 import { appSelector, setAnswerSelected, setScore, setSelectedAnswer } from '../features/appSlice';
@@ -6,8 +6,7 @@ import { appSelector, setAnswerSelected, setScore, setSelectedAnswer } from '../
 function Option({option, id}) {
 
     const string = "ABCD";
-    const [right, setRight] = useState(null);
-    const { score, answer, questionNo, answerSelected, selectedAnswer } = useSelector(appSelector);
+    const { score, answer,answerSelected, selectedAnswer } = useSelector(appSelector);
     const dispatch = useDispatch();
 
    
