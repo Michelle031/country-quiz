@@ -39,6 +39,8 @@ function Display() {
             dispatch(setAnswer(question?.answer));
             setOptions(question?.options);
         }
+
+        console.log(options);
     },[dispatch, question, questionNo]);
 
   return (
