@@ -42,7 +42,7 @@ function App() {
     <div className="app flex flex-col justify-center items-center bg-gradient-to-r  from-[#6066D0] via-[#5256A1] to-[#5C62C2] w-full h-screen">
       {loading ? (<p className='text-2xl text-white'>Loading ...</p>) : 
       ( <>
-        <h1 className="text-3xl text-[#F2F2F2] font-bold mr-[8rem] mb-2">COUNTRY QUIZ</h1>
+        <h1 className="text-3xl text-[#F2F2F2] font-bold mr-[7rem] md:mr-[8rem] mb-2">COUNTRY QUIZ</h1>
         <Display />      
         <SetOptions />
         </>
