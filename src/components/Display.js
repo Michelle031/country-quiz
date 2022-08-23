@@ -44,7 +44,7 @@ function Display() {
     },[dispatch, question, questionNo]);
 
   return (
-    <div className='relative max-w-[370px] min-w-[370px] p-6 bg-white rounded-3xl flex flex-col '>
+    <div className='relative max-w-[320px] min-w-[320px]  md:max-w-[370px] md:min-w-[370px] p-6 bg-white rounded-3xl flex flex-col '>
         {questionNo < 9 ? (
             <>
             <img src="/images/quiz.png" alt="" className='absolute h-[80px] -top-8 right-4'/>
